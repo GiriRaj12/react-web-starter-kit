@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import About from './About.js';
+import App from './App.js';
 
-test('About Snapshot test ', () => {
-    const render = renderer.create(<About></About>)
+test('App Snapshot test', () => {
+    const render = renderer.create(<App></App>)
     expect(render.toJSON()).toMatchSnapshot();
 })

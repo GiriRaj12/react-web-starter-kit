@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Snapshot test 1`] = `
+<div
+  className="App"
+>
+  <nav
+    className="header"
+  >
+    <div
+      className="header-navigation-block"
+    >
+      <span
+        className="headder-brand_element"
+      >
+        <img
+          alt=""
+          className="headder-brand_logo"
+          src="logo.svg"
+        />
+        <span
+          className="headder-brant_name"
+        >
+          React Starter kit
+        </span>
+      </span>
+      <ul
+        className="navigation-list_element"
+      >
+        <li>
+          <a
+            className="navigation-list-item"
+            href="/"
+            onClick={[Function]}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            className="navigation-list-item"
+            href="/about"
+            onClick={[Function]}
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a
+            className="navigation-list-item"
+            href="/git"
+            onClick={[Function]}
+          >
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div
+    className="basic-view"
+  >
+    React starter kit
+    <p>
+      Dependencies added React DOM, React Router, Redux, SCSS.
+    </p>
+  </div>
+  <div
+    className="article-block"
+  >
+    <div
+      className="article-block-element"
+    >
+      <div
+        className="article-icon"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-file fa-w-12 "
+          data-icon="file"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 384 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </div>
+      <h4>
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-graduation-cap fa-w-20 "
+          data-icon="graduation-cap"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 640 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+         Article
+      </h4>
+      <div
+        className="article-block_page"
+      >
+        <p>
+          This is a sample content to get rendered in the app or home page
+        </p>
+        <button>
+          Know More
+        </button>
+      </div>
+    </div>
+    <div
+      className="article-block-element"
+    >
+      <div
+        className="article-icon"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-file fa-w-12 "
+          data-icon="file"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 384 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </div>
+      <h4>
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-graduation-cap fa-w-20 "
+          data-icon="graduation-cap"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 640 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+         Article
+      </h4>
+      <div
+        className="article-block_page"
+      >
+        <p>
+          This is a sample content to get rendered in the app or home page
+        </p>
+        <button>
+          Know More
+        </button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>
+      React starter kit @giri
+    </p>
+  </footer>
+</div>
+`;

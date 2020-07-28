@@ -66,7 +66,7 @@ export function del(params, extensionUrl) {
  * Returns Fetch API 
  */
 export function patch(payload, extensionUrl) {
-    return fetch(getFormattedURL(params, extensionUrl), formHeadder(PATCH, payload))
+    return fetch(getFormattedURL(null, extensionUrl), formHeadder(PATCH, payload))
         .then(res => res.json())
 }
 
@@ -78,7 +78,7 @@ function fetchAPI(url, headder) {
 
 
 
-function getFormattedURL(params, extensionURL) {
+export function getFormattedURL(params, extensionURL) {
     return baseUrl + extensionURL + getParams(params);
 }
 
@@ -93,7 +93,7 @@ function getFormattedURL(params, extensionURL) {
  * For Example : {'key':'value','secondKey':'secondValue'} => 'baseURL/extension? key=value & secondKey=secondValue'
  */
 
-function getParams(params) {
+export function getParams(params) {
     let formattedURL = String('');
     if (params) {
         let i = 0;
@@ -106,4 +106,5 @@ function getParams(params) {
                 formattedURL = formattedURL + '&' + key + '=' + params[key];
         }
     }
+    return formattedURL;
 }

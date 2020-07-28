@@ -17,15 +17,17 @@ function App() {
     <Router>
       <div className='App'>
         <nav className="header">
-          <span className="headder-brand_element">
-            <img src={logo} className='headder-brand_logo' alt=''></img>
-            <span className="headder-brant_name">React Starter kit</span>
-          </span>
-          <ul className="navigation-list">
-            <li><Link to="/" className='navigation-list-item'>Home</Link></li>
-            <li><Link to="/about" className='navigation-list-item'>About</Link></li>
-            <li><Link to="/git" className='navigation-list-item'>GitHub</Link></li>
-          </ul>
+          <div className="header-navigation-block">
+            <span className="headder-brand_element">
+              <img src={logo} className='headder-brand_logo' alt=''></img>
+              <span className="headder-brant_name">React Starter kit</span>
+            </span>
+            <ul className="navigation-list_element">
+              <li><Link to="/" className='navigation-list-item'>Home</Link></li>
+              <li><Link to="/about" className='navigation-list-item'>About</Link></li>
+              <li><Link to="/git" className='navigation-list-item'>GitHub</Link></li>
+            </ul>
+          </div>
         </nav>
         <Switch>
           <Route exact path="/">

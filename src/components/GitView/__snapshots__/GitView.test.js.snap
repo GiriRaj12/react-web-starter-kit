@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GitView Snapshot test 1`] = `
+<div
+  className="basic-view"
+>
+  <p>
+    Git link provided
+  </p>
+  <a
+    href="https://github.com/GiriRaj12/react-web-starter-kit"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Click Here
+  </a>
+</div>
+`;

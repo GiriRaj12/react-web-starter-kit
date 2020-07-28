@@ -4,7 +4,7 @@ import './gitView.scss';
 function GitView() {
     return (<div className='basic-view'>
         <p>Git link provided</p>
-        <a target="_blank" rel="noopener noreferrer" href='https://github.com/GiriRaj12/react-web-starter-kit'>https://github.com/GiriRaj12/react-web-starter-kit</a>
+        <a target="_blank" rel="noopener noreferrer" href='https://github.com/GiriRaj12/react-web-starter-kit'>Click Here</a>
     </div>)
 }
 

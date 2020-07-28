@@ -1,10 +1,8 @@
 import React from 'react';
-import './about.scss';
+import renderer from 'react-test-renderer';
+import GitView from './GitView.js';
 
-function About() {
-    return (<div className='basic-view'>
-        Basic View
-    </div>)
-}
-
-export default About;
+test('GitView Snapshot test', () => {
+    const render = renderer.create(<GitView></GitView>)
+    expect(render.toJSON()).toMatchSnapshot();
+})
