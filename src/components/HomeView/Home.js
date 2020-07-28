@@ -5,7 +5,7 @@ function Home() {
     return (<div className="basic-view">
         React starter kit
         <p>
-            Dependencies added React DOM, React Router, Redux, SCSS.
+            Dependencies added React DOM, React Router, SCSS.
         </p>
     </div>)
 }
