@@ -1,10 +1,10 @@
 import React from 'react';
-import './basicView.scss';
+import './about.scss';
 
-function BasicView() {
+function About() {
     return (<div className='basic-view'>
         Basic View
     </div>)
 }
 
-export default BasicView;
+export default About;
