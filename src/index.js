@@ -4,7 +4,7 @@ import App from './pages/App/App.js';
 import './index.css'
 import Store from './services/ContextServices/Store.js';
 
-let sampleStore = { name: 'Giri' }
+let sampleStore = { name: () => { return 'Giri' } }
 
 ReactDOM.render(
   <React.StrictMode>

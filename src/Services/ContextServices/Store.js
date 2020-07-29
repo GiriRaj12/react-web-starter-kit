@@ -1,31 +1,33 @@
 import React, { useState, createContext, useEffect } from 'react';
 
 
-const StoreContext = createContext();
+export const StoreContext = createContext();
+
+export const dispatch = (obj) => {
+
+}
 
 
 function Store(props) {
     const [store, setStore] = useState({});
 
-    useEffect(() => {
-        createStore(props.store)
-    }, [])
-
     /**
-     * 
-     * @param {*} obj 
-     * Params in the form of {'desiredState':'reducerFunction'}
-     */
-
-    let createStore = (obj) => {
+    *  
+    * @param {*} obj 
+    * Params in the form of {'desiredState':'reducerFunction'}
+    */
+    const createStore = (obj) => {
         let toStore = { ...store };
-
         for (let key in obj) {
-            toStore.key = obj.key()
+            if (key)
+                toStore[key] = obj[key]()
         }
-        console.log(toStore);
         setStore(toStore);
-    }
+    };
+
+    useEffect(() => {
+        createStore(props.store);
+    }, [props.store])
 
     return (
         <StoreContext.Provider value={store}>
@@ -33,5 +35,4 @@ function Store(props) {
         </StoreContext.Provider>
     )
 }
-
 export default Store;
