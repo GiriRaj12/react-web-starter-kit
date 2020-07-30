@@ -1,36 +1,27 @@
 import React, { useState, createContext, useEffect } from 'react';
+import { Log } from '../LoggingService/Log';
 
-
-export const StoreContext = createContext();
-
-export const dispatch = (obj) => {
-
-}
-
+export const StoreContext = createContext({});
 
 function Store(props) {
-    const [store, setStore] = useState({});
-
-    /**
-    *  
-    * @param {*} obj 
-    * Params in the form of {'desiredState':'reducerFunction'}
-    */
-    const createStore = (obj) => {
-        let toStore = { ...store };
-        for (let key in obj) {
-            if (key)
-                toStore[key] = obj[key]()
-        }
-        setStore(toStore);
-    };
+    const [store, setStore] = useState();
 
     useEffect(() => {
-        createStore(props.store);
+        const createStore = (obj) => {
+            let toStore = {};
+            for (let key in obj) {
+                if (key)
+                    toStore[key] = obj[key](undefined, { type: 'none' })
+            }
+            toStore.reducers = obj;
+            setStore(toStore);
+        };
+        createStore(props.store)
+        Log.info(props.store);
     }, [props.store])
 
     return (
-        <StoreContext.Provider value={store}>
+        <StoreContext.Provider value={[store, setStore]}>
             {props.children}
         </StoreContext.Provider>
     )

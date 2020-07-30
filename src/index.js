@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './pages/App/App.js';
+import App from './Pages/App/App.js';
 import './index.css'
-import Store from './services/ContextServices/Store.js';
-
-let sampleStore = { name: () => { return 'Giri' } }
+import Store from './Services/ContextServices/Store.js';
+import { combinedReducer } from './Services/ContextServices/SampleReducer/index.js';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Store store={sampleStore}>
+    <Store store={combinedReducer}>
       <App />
     </Store>
   </React.StrictMode>,

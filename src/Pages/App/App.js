@@ -6,11 +6,9 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
+import { About, Git, Home } from '../index.js';
 import logo from '../../assets/logos/logo.svg';
-import About from '../../components/AboutView/About.js';
-import Home from '../../components/HomeView/Home.js';
-import GitView from '../../components/GitView/GitView.js';
-import Article from '../Article/Article';
+import Article from '../../components/Article/Article';
 
 function App() {
   return (
@@ -37,7 +35,7 @@ function App() {
             <About></About>
           </Route>
           <Route path="/git">
-            <GitView></GitView>
+            <Git></Git>
           </Route>
         </Switch>
         <Article></Article>
