@@ -1,7 +1,7 @@
-import React from './node_modules/react';
+import React from 'react';
 import Article from './Article';
 import SampleArticle from './SampleArticle';
-import {withInfo} from './node_modules/@storybook/addon-actions'
+import {withInfo} from '@storybook/addon-actions'
 
 
 export default {

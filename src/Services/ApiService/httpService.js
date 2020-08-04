@@ -19,7 +19,7 @@ function formHeadder(method = 'GET', payload) {
  * 
  * @param {*} params 
  * @param {*} extensionUrl 
- * Returns Fetch API 
+ * Returns Fetch API   
  */
 export function get(params, extensionUrl) {
     return fetch(getFormattedURL(params, extensionUrl))

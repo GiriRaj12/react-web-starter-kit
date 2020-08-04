@@ -1,15 +1,22 @@
 import { ADD_NAME } from '../SotreConstants.js';
+import { useDispatcher } from '../StoreDispatch.js';
 
+function useAction() {
+    const [dispatch] = useDispatcher();
 
-export const name = (name) => {
-    return {
-        type: ADD_NAME,
-        payload: name
+    const name = (name) => {
+        dispatch({
+            type: ADD_NAME,
+            payload: name
+        })
     }
+
+    const count = (action) => {
+        dispatch({
+            type: action
+        })
+    }
+    return [name, count];
 }
 
-export const count = (action) => {
-    return {
-        type: action
-    }
-}
+export default useAction;

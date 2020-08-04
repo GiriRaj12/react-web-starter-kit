@@ -17,7 +17,7 @@ function Store(props) {
             setStore(toStore);
         };
         createStore(props.store)
-        Log.info(props.store);
+        Log.info("Store : Line 20 : Props received for creating store :" + JSON.stringify(props.store));
     }, [props.store])
 
     return (

@@ -2,10 +2,10 @@ import React from 'react';
 import './Article.scss';
 import SampleArticle from './SampleArticle';
 
-function Article() {
+function Article(props) {
     return (<div className="article-block">
-        <SampleArticle></SampleArticle>
-        <SampleArticle></SampleArticle>
+        <SampleArticle theme={props.theme}></SampleArticle>
+        <SampleArticle theme={props.theme}></SampleArticle>
     </div>)
 }
 
